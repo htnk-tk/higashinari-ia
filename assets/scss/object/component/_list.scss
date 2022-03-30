@@ -1,0 +1,155 @@
+ul {
+	&.c-list {
+		&.-cmn {
+			li {
+				+ li {
+					@include mq(){
+						margin-top: 15px;
+					}
+
+					@include mq(sp){
+						margin-top: sp_size(5);
+					}
+				}
+
+				padding-left: 1em;
+				line-height: 1.73333333;
+				position: relative;
+
+				@include mq(){
+					font-size: 1.5rem;
+				}
+
+				@include mq(sp){
+					font-size: sp_size(13);
+				}
+
+				&::before {
+					content: "・";
+					position: absolute;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+
+dl {
+	&.c-list {
+		&.-company {
+			.c-row {
+				+ .c-row {
+					margin-top: 20px;
+
+					@include mq(sp){
+						margin-top: sp_size(10);
+					}
+				}
+
+				display: flex;
+			}
+
+			@include mq(){
+				font-size: 1.5rem;
+				line-height: 1.73333333;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(13);
+				line-height: 1.73333333;
+			}
+
+			dt {
+				width: 5.5em;
+				flex-shrink: 0;
+			}
+		}
+
+		&.-history {
+			@include mq(){
+				font-size: 1.5rem;
+				line-height: 1.73333333;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(13);
+				line-height: 1.73333333;
+			}
+
+			.c-row {
+				+ .c-row {
+					@include mq(){
+						margin-top: 20px;
+					}
+
+					@include mq(sp){
+						border-top: 1px solid #ccc;
+						margin-top: sp_size(10);
+						padding-top: sp_size(10);
+					}
+				}
+
+				@include mq(){
+					display: flex;
+				}
+			}
+
+			dt {
+				@include mq(){
+					width: 170px;
+					flex-shrink: 0;
+				}
+
+				@include mq(sp){
+					font-weight: 500;
+				}
+			}
+
+			dd {
+				@include mq(sp){
+					margin-left: 1em;
+				}
+			}
+		}
+
+		&.-access {
+			.c-row {
+				+ .c-row {
+					@include mq(){
+						margin-top: 5px;
+					}
+
+					@include mq(sp){
+						margin-top: sp_size(15);
+					}
+				}
+
+				@include mq(){
+					display: flex;
+				}
+			}
+
+			@include mq(){
+				font-size: 1.5rem;
+				line-height: 1.73333333;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(13);
+				line-height: 1.73333333;
+			}
+
+			dt {
+				width: 3em;
+				flex-shrink: 0;
+				font-weight: bold;
+			}
+
+			dd {
+				@include mq(sp){
+					margin-left: 1em;
+				}
+			}
+		}
+	}
+}

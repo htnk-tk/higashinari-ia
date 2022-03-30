@@ -1,0 +1,75 @@
+<?php
+# home, about, guide, access
+$current_id = "home";
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+	<!-- head before --><!-- /head before -->
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+
+	<!-- meta -->
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="">
+	<meta property="og:title" content="">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/icn.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/manifest.webmanifest">
+	<link rel="canonical" href="https://higashinari-ia.com/">
+
+	<!-- base -->
+	<meta name="description" content="">
+	<title>一般社団法人 東成工業会</title>
+
+	<!-- style -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Noto+Serif+JP:wght@300;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<!-- head after --><!-- /head after -->
+</head>
+
+<body>
+<!-- body before --><!-- /body before -->
+<!-- block_slip -->
+<div class="c-block_slip">
+	<a id="PAGE_TOP">ページの先頭です</a>
+	<ul>
+		<li><a href="#CONTENTS">コンテンツエリアへ</a></li>
+		<li><a href="#NAVIGATION">ナビゲーションへ</a></li>
+	</ul>
+</div><!-- /block_slip -->
+<!-- main wrapper -->
+<div class="l-wrapper">
+	<!-- global header --><?php include("assets/inc/global_header.inc");?><!-- /global header -->
+
+	<!-- breadcrumb -->
+	<div class="p-hansel">
+		<ol class="p-hansel__body" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li class="p-hansel__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="/"><span itemprop="name">ホーム</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li class="p-hansel__item">
+				<mark itemprop="name">東成工業会について</mark>
+			</li>
+		</ol>
+	</div><!-- /breadcrumb -->
+
+	<!-- main -->
+	<main class="l-main" role="main" id="CONTENTS">
+		<article>
+			//main contents
+		</article>
+	</main>
+
+	<!-- footer --><?php include("assets/inc/global_footer.inc");?><!-- /footer -->
+</div><!-- /main wrapper -->
+<!-- body after --><!-- /body after -->
+</body>
+</html>

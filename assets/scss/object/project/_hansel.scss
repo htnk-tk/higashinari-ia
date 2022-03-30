@@ -1,0 +1,59 @@
+.p-hansel {
+	+ {
+		.l-main {
+			.p-page_title {
+				margin-top: -45px;
+			}
+		}
+	}
+
+	~ {
+		.l-footer {
+			padding-top: sp_size(50);
+		}
+	}
+
+	@include mq(){
+		padding: 0 30px;
+	}
+
+	@include mq(sp){
+		padding: sp_size(10) sp_size(15);
+		border-top: 1px solid #DDDDDD;
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		@include font_serif;
+		color: #484848;
+
+		@include mq(){
+			height: 15px;
+			font-size: 1.2rem;
+			margin-top: 30px;
+		}
+
+		@include mq(sp){
+			font-size: sp_size(12);
+		}
+	}
+
+	&__item {
+		+ li {
+			&::before {
+				content: ">";
+				margin: 0 0.5em;
+			}
+		}
+
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

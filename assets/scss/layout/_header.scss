@@ -1,0 +1,52 @@
+.l-header {
+	display: flex;
+	align-items: center;
+
+	@include mq(){
+		height: 92px;
+		padding: 0 25px 0 30px;
+	}
+
+	@include mq(sp){
+		padding: sp_size(10) sp_size(15);
+		justify-content: space-between;
+	}
+
+	.c-symbol {
+		@include mq(){
+			margin-right: 5%;
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			@include font_serif;
+			font-weight: 500;
+			white-space: nowrap;
+		}
+
+		small {
+			@include mq(){
+				font-size: 1.3rem;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(10);
+			}
+		}
+
+		b {
+			letter-spacing: 0.07em;
+
+			@include mq(){
+				font-size: 3rem;
+				margin-top: 6px;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(20);
+				margin-top: sp_size(3);
+			}
+		}
+	}
+}

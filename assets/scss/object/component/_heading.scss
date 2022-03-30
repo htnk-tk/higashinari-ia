@@ -1,0 +1,75 @@
+.c-heading {
+	&.-lv1 {
+		+ {
+			* {
+				@include mq(){
+					margin-top: 40px;
+				}
+
+				@include mq(sp){
+					margin-top: sp_size(25);
+				}
+			}
+		}
+
+		position: relative;
+		font-weight: bold;
+		@include font_serif;
+		letter-spacing: 0.07em;
+
+		@include mq(){
+			font-size: 2.4rem;
+			padding-bottom: 20px;
+		}
+
+		@include mq(sp){
+			font-size: sp_size(16);
+			padding-bottom: sp_size(15);
+		}
+
+		small {
+			@include font_sans;
+			font-weight: normal;
+			letter-spacing: 0;
+
+			@include mq(){
+				margin-left: 10px;
+				font-size: 1.5rem;
+			}
+		}
+
+		&::after {
+			content: "";
+			background: #D27624;
+			width: 55px;
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&.-lv2 {
+		+ {
+			* {
+				@include mq(){
+					margin-top: 20px;
+				}
+
+				@include mq(sp){
+					margin-top: sp_size(15);
+				}
+			}
+		}
+
+		font-weight: 500;
+
+		@include mq(){
+			font-size: 1.8rem;
+		}
+
+		@include mq(sp){
+			font-size: sp_size(15);
+		}
+	}
+}

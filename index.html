@@ -1,0 +1,177 @@
+<?php
+# home, about, guide, access
+$current_id = "home";
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+	<!-- head before --><?php include("./assets/inc/head_before.inc");?><!-- /head before -->
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta property="og:url" content="https://higashinari-ia.com/">
+	<meta property="og:image" content="https://higashinari-ia.com/assets/img/og.jpg">
+	<meta property="og:site_name" content="一般社団法人 東成工業会">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="一般社団法人東成工業会のウェブサイトです。東成工業会は、ものづくりを中心とした種々の事業所で組織されています。一般社団法人東成工業会の概要について。会員企業の支援を目的として、種々の講演会の開催や案内、優良従業員の表彰、労働保険業務の受託、定期健康診断の斡旋、中小企業会館の運営、青年会への支援などを実施しています。">
+	<meta property="og:title" content="一般社団法人 東成工業会">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/icn.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/manifest.webmanifest">
+	<link rel="canonical" href="https://higashinari-ia.com/">
+	<!-- /meta -->
+
+	<!-- base -->
+	<meta name="description" content="一般社団法人東成工業会のウェブサイトです。東成工業会は、ものづくりを中心とした種々の事業所で組織されています。一般社団法人東成工業会の概要について。会員企業の支援を目的として、種々の講演会の開催や案内、優良従業員の表彰、労働保険業務の受託、定期健康診断の斡旋、中小企業会館の運営、青年会への支援などを実施しています。">
+	<title>一般社団法人 東成工業会</title>
+	<!-- /base -->
+
+	<!-- style --><?php include("./assets/inc/style.inc");?>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+	<!-- /style -->
+
+	<!-- js -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.p-home__slider__list').slick({
+				autoplay:true,
+				autoplaySpeed:3000,
+				dots:true,
+				arrows: false,
+			});
+		});
+	</script>
+	<!-- /js -->
+
+	<!-- head after --><?php include("./assets/inc/head_after.inc");?><!-- /head after -->
+</head>
+
+<body>
+<!-- body before --><?php include("./assets/inc/body_before.inc");?><!-- /body before -->
+
+<!-- main wrapper -->
+<div class="l-wrapper">
+	<!-- global header --><?php include("./assets/inc/global_header.inc");?><!-- /global header -->
+
+	<!-- main -->
+	<main class="l-main" role="main" id="CONTENTS">
+		<article>
+			<!-- home -->
+			<div class="p-home">
+				<!-- lead -->
+				<section class="p-home__lead">
+					<p class="c-lead">私たちは地域産業と会員企業の発展と親睦を図り、<br class="_pc">役に立つ情報の発信と会員企業の支援を目指します。</p>
+					<p>東成工業会は、ものづくりを中心とした種々の事業所で組織されています。<br>また会員企業の支援を目的として、種々の講演会の開催や案内、優良従業員の表彰、労働保険業務の受託、<br class="_pc">定期健康診断の斡旋、中小企業会館の運営、青年会への支援などを実施しています。</p>
+				</section><!-- /lead -->
+
+				<!-- slider -->
+				<section class="p-home__slider">
+					<ul class="p-home__slider__list">
+						<li>
+							<figure class="c-figure -slider">
+								<div class="c-img"><img src="/assets/img/home/slider_01.jpg" alt></div>
+								<b>定時総会・講演会</b>
+								<figcaption>定時総会後に外部から講師をお招きして講演会を開催しております。</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="c-figure -slider">
+								<div class="c-img"><img src="/assets/img/home/slider_02.jpg" alt></div>
+								<b>優良従業員表彰式</b>
+								<figcaption>会員企業の優良な社員の方を推薦していただき、表彰を行っています。</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="c-figure -slider">
+								<div class="c-img"><img src="/assets/img/home/slider_03.jpg" alt></div>
+								<b>新型コロナウイルスワクチン職域接種職域接種</b>
+								<figcaption>令和3年9月・10月、新型コロナウイルスワクチン職域接種を実施しました。</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</section><!-- /slider -->
+
+				<!-- local link -->
+				<section class="p-home__local_link">
+					<div class="c-grid" data-gap-col="pc:20" data-gap-row="sp:25">
+						<!-- 東成工業会について -->
+						<div class="c-col" data-col="pc:3-1">
+							<a href="/about/">
+								<figure>
+									<div class="c-img"><img src="/assets/img/home/pct_01.jpg" alt></div>
+									<figcaption>東成工業会について</figcaption>
+								</figure>
+							</a>
+						</div><!-- /東成工業会について -->
+
+						<!-- 入会のご案内 -->
+						<div class="c-col" data-col="pc:3-1">
+							<a href="/guide/">
+								<figure>
+									<div class="c-img"><img src="/assets/img/home/pct_02.jpg" alt></div>
+									<figcaption>入会のご案内</figcaption>
+								</figure>
+							</a>
+						</div><!-- /入会のご案内 -->
+
+						<!-- アクセス -->
+						<div class="c-col" data-col="pc:3-1">
+							<a href="/access/">
+								<figure>
+									<div class="c-img"><img src="/assets/img/home/pct_03.jpg" alt></div>
+									<figcaption>アクセス</figcaption>
+								</figure>
+							</a>
+						</div><!-- /アクセス -->
+					</div>
+				</section><!-- /local link -->
+
+				<!-- 会員の皆様へ -->
+				<section class="c-section -bg_gray">
+					<div class="c-inner">
+						<h1 class="c-heading -lv1">会員の皆様へ</h1>
+						<p>東成工業会の「今」を公式SNSで発信しています。ぜひご登録ください！</p>
+
+						<div class="c-grid -center" data-gap-col="pc:20" data-gap-row="sp:50">
+<!--							<div class="c-col" data-col="pc:2-1">-->
+<!--								<div class="p-video -youtube">-->
+<!--									<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HY6-qKk31Fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--								</div>-->
+<!--							</div>-->
+							<div class="c-col" data-col="pc:2-1">
+								<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E4%25B8%2580%25E8%2588%25AC%25E7%25A4%25BE%25E5%259B%25A3%25E6%25B3%2595%25E4%25BA%25BA-%25E6%259D%25B1%25E6%2588%2590%25E5%25B7%25A5%25E6%25A5%25AD%25E4%25BC%259A-100423949305012%2F&tabs=timeline&width=500&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /会員の皆様へ -->
+
+				<!-- バナー -->
+<!--				<section class="c-section">-->
+<!--					<div class="c-grid" data-gap-col="pc:20" data-gap-row="sp:25">-->
+<!--						<div class="c-col" data-col="pc:2-1">-->
+<!--							<a href="">-->
+<!--								<span class="c-img"><img src="/assets/img/home/bnr_dummy.jpg" alt></span>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--						<div class="c-col" data-col="pc:2-1">-->
+<!--							<a href="">-->
+<!--								<span class="c-img"><img src="/assets/img/home/bnr_dummy.jpg" alt></span>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</section>-->
+				<!-- /バナー-->
+			</div><!-- /home -->
+		</article>
+	</main>
+
+	<!-- footer --><?php include("./assets/inc/global_footer.inc");?><!-- /footer -->
+</div><!-- /main wrapper -->
+<!-- body after --><?php include("./assets/inc/body_after.inc");?><!-- /body after -->
+</body>
+</html>

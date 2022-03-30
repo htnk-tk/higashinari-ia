@@ -1,0 +1,267 @@
+.p-global_nav {
+	@include mq(){
+		flex: 1;
+		display: flex;
+	}
+
+	&__open {
+		@include mq(){
+			display: none;
+		}
+
+		display: block;
+		width: sp_size(35);
+		height: sp_size(30);
+		box-shadow: 0 0 5px rgba(0,0,0,.3);
+		border-radius: 3px;
+		position: fixed;
+		top: sp_size(10);
+		right: sp_size(10);
+		background: white;
+		z-index: 2;
+
+		span, &::before, &::after {
+			content: "";
+			width: 25px;
+			height: 2px;
+			background: #000;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+
+		&::before {
+			top: sp_size(-5);
+			bottom: sp_size(5);
+		}
+
+		&::after {
+			top: sp_size(5);
+			bottom: sp_size(-5);
+		}
+	}
+
+	&__close {
+		@include mq(){
+			display: none;
+		}
+
+		@include mq(sp){
+			position: absolute;
+			display: block;
+			width: sp_size(35);
+			height: sp_size(30);
+			//box-shadow: 0 0 5px rgba(0,0,0,.3);
+			border-radius: 3px;
+			top: sp_size(10);
+			right: sp_size(10);
+			background: white;
+			z-index: 2;
+
+			&::before, &::after {
+				content: "";
+				width: 25px;
+				height: 2px;
+				background: #000;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				transform: rotate(45deg);
+			}
+
+			&::after {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
+	&__body {
+		@include mq(){
+			display: flex;
+			flex: 1;
+			align-items: center;
+			justify-content: space-between;
+
+			&::before {
+				content: "";
+			}
+		}
+
+		@include mq(sp){
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 100vh;
+			background: white;
+			z-index: 3;
+			padding: sp_size(60) sp_size(15) sp_size(15);
+			transform: translateY(-100%);
+			transition: .3s;
+			opacity: 0;
+		}
+	}
+
+	&__status {
+		position: fixed;
+		top: 0;
+		left: 0;
+		appearance: none;
+		transform: translate(-100%, -100%);
+		//z-index: 1000;
+
+		&:checked ~ .p-global_nav__body {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	&__list {
+		@include font_serif;
+
+		@include mq(){
+			display: flex;
+			font-size: 1.5rem;
+			justify-content: space-between;
+			max-width: 480px;
+			width: 50%;
+		}
+
+		@include mq(sp){
+			font-size: sp_size(18);
+		}
+	}
+
+	&__item {
+		+ li {
+			@include mq(){
+				//margin-left: 80px;
+			}
+		}
+
+		@include mq(sp){
+			border-bottom: 1px solid #DDDDDD;
+		}
+
+		a {
+			position: relative;
+			white-space: nowrap;
+
+			@include mq(){
+				display: block;
+			}
+
+			@include mq(sp){
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				height: sp_size(45);
+				padding: sp_size(5) sp_size(10);
+			}
+
+			&::after {
+				content: "";
+
+				@include mq(){
+					height: 1px;
+					background: #00359A;
+					right: 0;
+					top: calc(100% + 8px);
+					left: 0;
+					margin: auto;
+					position: absolute;
+					width: 0;
+					transition: .2s;
+				}
+
+				@include mq(sp){
+					width: sp_size(10);
+					height: sp_size(10);
+					display: block;
+					border-top: 2px solid;
+					border-right: 2px solid;
+					transform: rotate(45deg);
+				}
+			}
+
+			@include mq(){
+				&.is-current,
+				&:hover {
+					&::after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	&__access {
+		@include mq(){
+			margin-left: 3%;
+			display: flex;
+		}
+
+		@include mq(sp){
+			margin-top: sp_size(50);
+			display: flex;
+			justify-content: center;
+		}
+
+		.c-btn {
+			height: 60px;
+			display: inline-flex;
+			border: 1px solid #DDDDDD;
+			justify-content: center;
+			flex-direction: column;
+			border-radius: 8px;
+			transition: .2s;
+			white-space: nowrap;
+
+			small {
+				font-size: 1.2rem;
+				font-weight: 500;
+			}
+
+			b {
+				font-size: 3rem;
+				@include font_roboto;
+				margin-top: 3px;
+				color: #00359A;
+
+				@include mq(sp){
+					font-size: sp_size(28);
+				}
+			}
+
+			&.-phone {
+				@include mq(){
+					padding: 3px 25px 0 30px;
+				}
+
+				@include mq(sp){
+					padding: 3px 20px 0;
+				}
+			}
+
+			&.-mail {
+				width: 60px;
+				align-items: center;
+				margin-left: 10px;
+
+				b {
+					margin-top: 5px;
+				}
+			}
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}

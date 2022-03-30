@@ -1,0 +1,43 @@
+.p-page_header {
+	display: flex;
+	align-items: flex-end;
+	background: {
+		image: url(/assets/img/cmn/bg_page_header.png);
+		position: right bottom;
+		repeat: no-repeat;
+	}
+
+	@include mq(){
+		height: 195px;
+		justify-content: center;
+		margin-bottom: 90px;
+		background: {
+			size: auto 195px;
+		}
+	}
+
+	@include mq(sp){
+		height: sp_size(80);
+		margin-bottom: sp_size(40);
+		background: {
+			size: auto sp_size(80);
+		}
+	}
+
+	.c-heading {
+		@include font_serif;
+		font-weight: bold;
+		letter-spacing: 0.07em;
+
+		@include mq(){
+			width: 1000px;
+			margin-bottom: 25px;
+			font-size: 3.6rem;
+		}
+
+		@include mq(sp){
+			margin: 0 sp_size(15) sp_size(10);
+			font-size: sp_size(20);
+		}
+	}
+}

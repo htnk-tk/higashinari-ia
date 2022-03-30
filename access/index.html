@@ -1,0 +1,119 @@
+<?php
+# home, about, guide, access
+$current_id = "access";
+?>
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+	<!-- head before --><?php include("../assets/inc/head_before.inc");?><!-- /head before -->
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta property="og:url" content="https://higashinari-ia.com/access/">
+	<meta property="og:image" content="https://higashinari-ia.com/assets/img/og.jpg">
+	<meta property="og:site_name" content="一般社団法人 東成工業会">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="東成工業会の交通アクセスのご案内です。電車をご利用の場合、今里駅(大阪メトロ)から徒歩約3分。バスをご利用の場合、今里駅停留所（今里ライナー）から徒歩約3分。">
+	<meta property="og:title" content="交通アクセス | 一般社団法人 東成工業会">
+	<link rel="icon" href="/favicon.ico" sizes="any">
+	<link rel="icon" href="/icn.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+	<link rel="manifest" href="/manifest.webmanifest">
+	<link rel="canonical" href="https://higashinari-ia.com/access/">
+	<!-- /meta -->
+
+	<!-- base -->
+	<meta name="description" content="東成工業会の交通アクセスのご案内です。電車をご利用の場合、今里駅(大阪メトロ)から徒歩約3分。バスをご利用の場合、今里駅停留所（今里ライナー）から徒歩約3分。">
+	<title>交通アクセス | 一般社団法人 東成工業会</title>
+	<!-- /base -->
+
+	<!-- style --><?php include("../assets/inc/style.inc");?><!-- /style -->
+
+	<!-- head after --><?php include("../assets/inc/head_after.inc");?><!-- /head after -->
+</head>
+
+<body>
+<!-- body before --><?php include("../assets/inc/body_before.inc");?><!-- /body before -->
+
+<!-- main wrapper -->
+<div class="l-wrapper">
+	<!-- global header --><?php include("../assets/inc/global_header.inc");?><!-- /global header -->
+
+	<!-- breadcrumb -->
+	<div class="p-hansel">
+		<ol class="p-hansel__body" itemscope itemtype="http://schema.org/BreadcrumbList">
+			<li class="p-hansel__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="/"><span itemprop="name">ホーム</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			<li class="p-hansel__item">
+				<mark itemprop="name">交通アクセス</mark>
+			</li>
+		</ol>
+	</div><!-- /breadcrumb -->
+
+	<!-- main -->
+	<main class="l-main" role="main" id="CONTENTS">
+		<article>
+			<!-- page title -->
+			<header class="p-page_header">
+				<h1 class="c-heading">交通アクセス</h1>
+			</header><!-- /page title -->
+
+			<!-- map -->
+			<section class="c-section">
+				<div class="p-access_map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.634035179653!2d135.535521268605!3d34.66963798044234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e09f8b0bfd2b%3A0xa75e7d06f1eefc3c!2z77yI56S-77yJ5p2x5oiQ5bel5qWt5Lya!5e0!3m2!1sja!2sjp!4v1647917978021!5m2!1sja!2sjp" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<dl class="c-list">
+						<div class="c-row">
+							<dt>所在地</dt>
+							<dd>大阪府大阪市東成区大今里3-16-11　東成中小企業会館</dd>
+						</div>
+						<div class="c-row">
+							<dt>電話番号</dt>
+							<dd>06-6981-3365</dd>
+						</div>
+						<div class="c-row">
+							<dt>ファクス</dt>
+							<dd>06-6976-3893</dd>
+						</div>
+					</dl>
+				</div>
+			</section><!-- /map -->
+
+			<!-- 公共交通機関でお越しの方 -->
+			<section class="c-section">
+				<div class="c-inner">
+					<div class="c-grid" data-gap-row="sp:50" data-gap-col="pc:60;">
+						<div class="c-col" data-col="pc:2-1">
+							<div class="c-img">
+								<img src="/assets/img/access/pct_01.png" alt>
+							</div>
+						</div>
+						<div class="c-col" data-col="pc:2-1">
+							<h1 class="c-heading -lv1">公共交通機関でお越しの方</h1>
+							<dl class="c-list -access">
+								<!-- 電車 -->
+								<div class="c-row">
+									<dt>電車</dt>
+									<dd>今里駅(大阪メトロ)から徒歩約3分。</dd>
+								</div><!-- /電車 -->
+
+								<!-- バス -->
+								<div class="c-row">
+									<dt>バス</dt>
+									<dd>今里駅停留所（今里ライナー）から徒歩約3分。</dd>
+								</div><!-- /バス -->
+							</dl>
+						</div>
+					</div>
+				</div>
+			</section><!-- /公共交通機関でお越しの方 -->
+		</article>
+	</main>
+
+	<!-- footer --><?php include("../assets/inc/global_footer.inc");?><!-- /footer -->
+</div><!-- /main wrapper -->
+<!-- body after --><?php include("../assets/inc/body_after.inc");?><!-- /body after -->
+</body>
+</html>

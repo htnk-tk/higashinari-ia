@@ -1,0 +1,55 @@
+.p-access_map {
+	iframe {
+		+ dl {
+			@include mq(){
+				margin-top: 20px;
+			}
+			@include mq(sp){
+				margin-top: sp_size(20);
+			}
+		}
+
+		@include mq(sp){
+			max-width: 100%;
+			max-height: 30vh;
+		}
+	}
+
+	.c-list {
+		.c-row {
+			+ .c-row {
+				@include mq(){
+					margin-top: 10px;
+				}
+
+				@include mq(sp){
+					margin-top: sp_size(15);
+				}
+			}
+			line-height: 1.73333333;
+
+			@include mq(){
+				display: flex;
+				font-size: 1.5rem;
+			}
+
+			@include mq(sp){
+				font-size: sp_size(13);
+			}
+		}
+
+		dt {
+			@include mq(){
+				width: 5.5em;
+			}
+
+			@include mq(sp){
+				font-weight: bold;
+			}
+		}
+
+		dd {
+			margin-left: 1em;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+// *** Media Queries ***
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// *** 幅375px換算で px を変換
+@function sp_size($value) {
+  //@return $value / 375 * 100vw;
+  $min_size : $value * 0.8533333333px;
+  $max_size : $value * 1px;
+  @return clamp(#{$min_size}, calc(#{$value} / 375 * 100vw), #{$max_size});
+}

@@ -1,0 +1,15 @@
+@include mq(){
+	._sp {
+		display: none !important;
+	}
+
+	[data-style*="pc:ta_c"] {
+		text-align: center !important;
+	}
+}
+
+@include mq(sp){
+	._pc {
+		display: none !important;
+	}
+}

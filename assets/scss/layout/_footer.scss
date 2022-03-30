@@ -1,0 +1,55 @@
+.l-footer {
+	.c-inner {
+		&.-subpage {
+			@include mq(){
+				width: 1000px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+		}
+
+		&.-home {
+			.p-footer__access {
+				@include mq(){
+					box-shadow: none;
+					padding: 0;
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
+
+	.c-map {
+		+ {
+			.p-footer__access {
+				@include mq(sp){
+					margin-top: sp_size(15);
+				}
+			}
+		}
+
+		iframe {
+			@include mq(sp){
+				max-height: 35vh;
+			}
+		}
+	}
+
+	.c-copyright {
+		background: #292929;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+
+		@include mq(){
+			font-size: 1.2rem;
+		}
+
+		@include mq(sp){
+			font-size: sp_size(12);
+		}
+	}
+}

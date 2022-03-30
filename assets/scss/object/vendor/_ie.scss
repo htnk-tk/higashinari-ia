@@ -1,0 +1,7 @@
+@media all and (-ms-high-contrast: none) {
+	#sections {
+		.p-service__figure_group figure {
+			width: calc(100% / 3 - 1px);
+		}
+	}
+}
