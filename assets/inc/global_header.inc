@@ -11,7 +11,8 @@
 				<label for="GLOBAL_NAV_STATUS" class="p-global_nav__close"></label>
 				<ul class="p-global_nav__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
 					<li class="p-global_nav__item" itemprop="name"><a href="/about/" itemprop="url"<?php if($current_id == 'about') echo ' class="is-current"'; ?>>東成工業会について</a></li>
-					<li class="p-global_nav__item" itemprop="name"><a href="/guide/" itemprop="url"<?php if($current_id == 'guide') echo ' class="is-current"'; ?>>入会のご案内</a></li>
+          <li class="p-global_nav__item" itemprop="name"><a href="/guide/" itemprop="url"<?php if($current_id == 'guide') echo ' class="is-current"'; ?>>入会のご案内</a></li>
+          <li class="p-global_nav__item" itemprop="name"><a href="/facility/" itemprop="url"<?php if($current_id == 'facility') echo ' class="is-current"'; ?>>施設ご利用案内</a></li>
 					<li class="p-global_nav__item" itemprop="name"><a href="/access/" itemprop="url"<?php if($current_id == 'access') echo ' class="is-current"'; ?>>交通アクセス</a></li>
 				</ul>
 

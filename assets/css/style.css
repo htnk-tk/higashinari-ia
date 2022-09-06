@@ -125,7 +125,7 @@ body *, body *::before, body *::after {
 }
 @media (min-width: 769px), print {
   .l-header .c-symbol {
-    margin-right: 5%;
+    margin-right: 3vw;
   }
 }
 .l-header .c-symbol a {
@@ -189,7 +189,7 @@ body *, body *::before, body *::after {
   }
 }
 .l-footer .c-copyright {
-  background: #292929;
+  background: #709398;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -771,12 +771,12 @@ dl.c-list.-access dt {
 @media (min-width: 769px), print {
   .p-global_nav__body {
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: space-between;
-  }
-  .p-global_nav__body::before {
-    content: "";
+    width: 100%;
+    max-width: 950px;
+    min-width: 800px;
+    margin-left: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -816,8 +816,8 @@ dl.c-list.-access dt {
     display: flex;
     font-size: 1.5rem;
     justify-content: space-between;
-    max-width: 480px;
-    width: 50%;
+    max-width: 700px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -881,7 +881,7 @@ dl.c-list.-access dt {
 }
 @media (min-width: 769px), print {
   .p-global_nav__access {
-    margin-left: 3%;
+    margin-left: 3vw;
     display: flex;
   }
 }
@@ -1167,7 +1167,7 @@ dl.c-list.-access dt {
   height: 56px;
   display: flex;
   align-items: center;
-  background: #292929;
+  background: #709398;
   color: white;
   padding: 0 20px;
   font-size: 1.5rem;
@@ -1619,7 +1619,7 @@ dl.c-list.-access dt {
   overflow: hidden;
 }
 .p-home__local_link figcaption {
-  background: #000;
+  background: #709398;
   color: white;
   font-size: 1.8rem;
   height: 60px;
