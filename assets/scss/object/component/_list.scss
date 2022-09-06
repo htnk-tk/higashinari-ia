@@ -1,6 +1,24 @@
 ul {
 	&.c-list {
 		&.-cmn {
+			+ {
+				* {
+					margin-top: 40px;
+
+					@include mq(sp){
+						margin-top: sp_size(20);
+					}
+				}
+
+				.c-btn_wrapper {
+					margin-top: 80px;
+
+					@include mq(sp){
+						margin-top: sp_size(40);
+					}
+				}
+			}
+
 			li {
 				+ li {
 					@include mq(){
@@ -148,6 +166,97 @@ dl {
 			dd {
 				@include mq(sp){
 					margin-left: 1em;
+				}
+			}
+		}
+
+		&.-facility {
+			+ {
+				* {
+					margin-top: 24px;
+
+					@include mq(sp){
+						margin-top: sp_size(12);
+					}
+				}
+
+				p.u-ta_c {
+					margin-top: 60px;
+				}
+			}
+
+			> .c-scope {
+				+ .c-scope {
+					margin-top: 1.5em;
+				}
+
+				font-size: 1.5rem;
+				line-height: 1.8;
+
+				@include mq(){
+					display: flex;
+				}
+
+				> dt {
+					font-weight: bold;
+
+					@include mq(){
+						margin-right: 30px;
+						white-space: nowrap;
+					}
+				}
+
+				&.-price {
+					> dt {
+
+						@include mq(){
+							min-width: 160px;
+						}
+					}
+				}
+
+				&.-parking {
+					> dt {
+						@include mq(){
+							min-width: 140px;
+						}
+					}
+				}
+
+				&.-office {
+					> dt {
+						@include mq(){
+							min-width: 140px;
+						}
+					}
+				}
+			}
+		}
+
+		&.-price {
+			.c-scope {
+				display: flex;
+				font-size: 1.5rem;
+				line-height: 1.5;
+				margin-bottom: 1em;
+
+				> dt {
+					min-width: 190px;
+					white-space: nowrap;
+				}
+
+				> dd {
+					display: flex;
+
+					.c-price {
+						min-width:65px;
+						text-align: right;
+						white-space: nowrap;
+					}
+
+					small {
+						margin-left: 1.5em;
+					}
 				}
 			}
 		}

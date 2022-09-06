@@ -24,6 +24,22 @@
 					margin-top: sp_size(50);
 				}
 			}
+
+			.c-img {
+				margin-top: 40px;
+
+				@include mq(sp){
+					margin-top: sp_size(20);
+				}
+			}
+
+			.c-list {
+				margin-top: 40px;
+
+				@include mq(sp){
+					margin-top: sp_size(20);
+				}
+			}
 		}
 
 		line-height: 1.73333333;

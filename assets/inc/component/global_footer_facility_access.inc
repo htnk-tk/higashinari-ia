@@ -1,10 +1,6 @@
 
-			<div class="p-footer__access" id="FOOTER_ADDRESS">
-				<?php if ($current_id == 'facility'): ?>
+			<div class="p-footer__access">
 				<p class="c-lead">施設利用に関するご相談・ご予約など、<br class="_sp">お気軽にご相談ください。</p>
-				<?php else: ?>
-				<p class="c-lead">ご入会や、労災保険の加入や申請など、<br class="_sp">お気軽にご相談ください。</p>
-				<?php endif ?>
 				<dl>
 					<div class="c-phone">
 						<dt>お問い合わせ</dt>
