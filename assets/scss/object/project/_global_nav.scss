@@ -84,13 +84,13 @@
 	&__body {
 		@include mq(){
 			display: flex;
-			flex: 1;
+			//flex: 1;
 			align-items: center;
 			justify-content: space-between;
-
-			&::before {
-				content: "";
-			}
+			width: 100%;
+			max-width: 950px;
+			min-width: 800px;
+			margin-left: auto;
 		}
 
 		@include mq(sp){
@@ -129,8 +129,8 @@
 			display: flex;
 			font-size: 1.5rem;
 			justify-content: space-between;
-			max-width: 480px;
-			width: 50%;
+			max-width: 700px;
+			width: 100%;
 		}
 
 		@include mq(sp){
@@ -203,7 +203,8 @@
 
 	&__access {
 		@include mq(){
-			margin-left: 3%;
+			//margin-left: 4%;
+			margin-left: 3vw;
 			display: flex;
 		}
 
