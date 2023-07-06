@@ -6,6 +6,11 @@ $current_id = "facility";
 <head prefix="og: http://ogp.me/ns#">
 	<!-- head before --><?php include("../assets/inc/head_before.inc");?><!-- /head before -->
 
+	<link rel="stylesheet" href="/assets/css/slick.css">
+	<script type="text/javascript" src="../assets/js/jquery-3.6.1.min.js"></script>
+	<script type="text/javascript" src="../assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="../assets/js/slideshow.js"></script>
+
 	<!-- meta -->
 	<meta charset="UTF-8">
 	<meta property="og:url" content="https://higashinari-ia.com/about/">
@@ -62,7 +67,7 @@ $current_id = "facility";
 			<section class="c-section">
 				<p>東成工業会は、当会の入る東成中小企業会館の貸会議室や貸事務所、月極駐車場などの施設を運営しています。<br>今里駅(大阪メトロ)や今里駅停留所（バス・今里ライナー）から徒歩約3分でアクセスも良好です。<br>当会員だけでなく、一般の方もご利用いただけます。施設の見学も受け付けています。<br>詳しくは当ページの内容をご確認の上、お気軽にご連絡ください。</p>
 
-				<div class="c-img"><img src="../assets/img/facility/pct_main.png" alt="施設外観"></div>
+				<div class="c-img"><img src="../assets/img/facility/pct_main.jpg" alt="施設外観"></div>
 			</section>
 
 			<!-- 基本情報 -->
@@ -113,7 +118,7 @@ $current_id = "facility";
 
 			<!-- 当施設のご利用にあたって（はじめにお読み下さい） -->
 			<section class="c-section">
-				<h1 class="c-heading -lv1">当施設のご利用にあたって（はじめにお読み下さい）</h1>
+				<h1 class="c-heading -lv1">当施設のご利用にあたって<br class="_sp">（はじめにお読み下さい）</h1>
 				<h2 class="c-heading -lv2">施設全般に関する注意事項や禁止事項</h2>
 				<ul class="c-list -cmn">
 					<li>利用施設の仮予約など、キャンセル前提の複数お申し込みは他のご利用者さまのご迷惑となりますのでお断りさせていただいております。</li>
@@ -130,7 +135,7 @@ $current_id = "facility";
 
 				<h2 class="c-heading -lv2">下見や打ち合わせについて</h2>
 				<p>下見や打合せが必要な方は、お問い合わせください。また、お電話でのお打ち合わせも承っております。<br>
-					詳しくは、当ページ下の電話番号、メールアドレスよりお気軽にお問い合わせください。</p>
+					詳しくは、当ページ下の電話番号、メールアドレスより<br class="_sp">お気軽にお問い合わせください。</p>
 
 				<h2 class="c-heading -lv2">暴力団等反社会的勢力の利用は一切お断りしています</h2>
 				<p>暴力団等反社会的勢力の利益になる使用は許可しません。使用許可後に暴力団等反社会的勢力の利益になる使用であると判明したときは、使用許可の取消等を行います。また、上記事由を確認する必要がある場合は、大阪府警察本部に照会することがあります。</p>
@@ -142,39 +147,27 @@ $current_id = "facility";
 				<h1 class="c-heading -lv1">貸会議室（東成中小企業会館 会議室）</h1>
 
 				<!-- slider -->
-				<div class="p-slider">
+				<div class="p-slider" data-slide-id="1">
 					<div class="slider slider-for">
 						<div>
-							<img src="../assets/img/facility/slider_01_01.png" alt>
+							<img src="../assets/img/facility/slider_01_01.jpg" alt>
 						</div>
 						<div>
-							<img src="../assets/img/facility/slider_01_02.png" alt>
+							<img src="../assets/img/facility/slider_01_02.jpg" alt>
 						</div>
 						<div>
-							<img src="../assets/img/facility/slider_01_03.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_01_04.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_01_05.png" alt>
+							<img src="../assets/img/facility/slider_01_03.jpg" alt>
 						</div>
 					</div>
 					<div class="slider slider-nav">
 						<div>
-							<img src="../assets/img/facility/slider_01_01.png" alt>
+							<img src="../assets/img/facility/slider_01_01.jpg" alt>
 						</div>
 						<div>
-							<img src="../assets/img/facility/slider_01_02.png" alt>
+							<img src="../assets/img/facility/slider_01_02.jpg" alt>
 						</div>
 						<div>
-							<img src="../assets/img/facility/slider_01_03.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_01_04.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_01_05.png" alt>
+							<img src="../assets/img/facility/slider_01_03.jpg" alt>
 						</div>
 					</div>
 				</div><!-- /slider -->
@@ -190,17 +183,17 @@ $current_id = "facility";
 							<dl class="c-list -price">
 								<div class="c-scope">
 									<dt>午前（9:00から12:00まで）</dt>
-									<dd><span class="c-price">8,800円</span><small>空調使用の場合は 11,400円</small></dd>
+									<dd><span class="c-price">8,800円</span><small>空調使用の場合は 11,440円</small></dd>
 								</div>
 
 								<div class="c-scope">
 									<dt>午後（13:00から17:00まで）</dt>
-									<dd><span class="c-price">9,900円</span><small>空調使用の場合は 12,800円</small></dd>
+									<dd><span class="c-price">9,900円</span><small>空調使用の場合は 12,870円</small></dd>
 								</div>
 
 								<div class="c-scope">
 									<dt>終日（9:00から17:00まで）</dt>
-									<dd><span class="c-price">18,700円</span><small>空調使用の場合は 24,300円</small></dd>
+									<dd><span class="c-price">18,700円</span><small>空調使用の場合は 24,310円</small></dd>
 								</div>
 							</dl>
 							<p>※料金は税込です。</p>
@@ -208,16 +201,18 @@ $current_id = "facility";
 					</div><!-- 利用料金 -->
 
 					<!-- 無料の設備・サービス -->
-					<div class="c-scope -price">
-						<dt>無料の設備・サービス</dt>
-						<dd>無料wi-fi、エアコン、映写スクリーン（手動式）、2F同階に給湯室、トイレあり</dd>
-					</div><!-- /無料の設備・サービス -->
+<!--					<div class="c-scope -price">-->
+<!--						<dt>無料の設備・サービス</dt>-->
+<!--						<dd>無料wi-fi、エアコン、映写スクリーン（手動式）、2F同階に給湯室、トイレあり</dd>-->
+<!--					</div>-->
+					<!-- /無料の設備・サービス -->
 
 					<!-- 有料の設備・サービス -->
-					<div class="c-scope -price">
-						<dt>有料の設備・サービス</dt>
-						<dd></dd>
-					</div><!-- /有料の設備・サービス -->
+<!--					<div class="c-scope -price">-->
+<!--						<dt>有料の設備・サービス</dt>-->
+<!--						<dd></dd>-->
+<!--					</div>-->
+					<!-- /有料の設備・サービス -->
 				</dl><!-- /貸会議室情報 -->
 
 				<!-- 注意事項 -->
@@ -236,8 +231,8 @@ $current_id = "facility";
 
 				<div class="c-btn_wrapper">
 					<figure class="c-figure -btn_wrapper">
-						<figcaption>下記より空き状況をご確認の上、お申し込みください。</figcaption>
-						<a href="" class="c-btn -cmn">会議室の空き状況を確認する</a>
+						<figcaption>下記より空き状況をご確認の上、<br class="_sp">お申し込みください。</figcaption>
+						<a href="https://docs.google.com/spreadsheets/d/1vTLme4L-oZuTRzZ5Z1OU7ZK4XdXDQDhjpgIlQ4WeFGI/edit?usp=sharing" target="_blank" rel="noopener" class="c-btn -cmn">会議室の空き状況を確認する</a>
 					</figure>
 				</div>
 			</section><!-- /貸会議室（東成中小企業会館 会議室） -->
@@ -247,23 +242,17 @@ $current_id = "facility";
 				<h1 class="c-heading -lv1">駐車場（月極め）</h1>
 
 				<!-- slider -->
-				<div class="p-slider">
+				<div class="p-slider" data-slide-id="2">
 					<div class="slider slider-for">
 						<div>
-							<img src="../assets/img/facility/slider_02_01.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_02_02.png" alt>
+							<img src="../assets/img/facility/slider_02_01.jpg" alt>
 						</div>
 					</div>
-					<div class="slider slider-nav">
-						<div>
-							<img src="../assets/img/facility/slider_02_01.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_02_02.png" alt>
-						</div>
-					</div>
+<!--					<div class="slider slider-nav">-->
+<!--						<div>-->
+<!--							<img src="../assets/img/facility/slider_02_01.jpg" alt>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div><!-- /slider -->
 
 				<dl class="c-list -facility">
@@ -302,7 +291,7 @@ $current_id = "facility";
 					</div><!-- /契約管理会社 -->
 				</dl>
 
-				<p class="u-ta_c"><a href="#FOOTER_ADDRESS" class="c-link -cmn">駐車場の空き状況やお問い合わせに関しては、<br>ページ下の電話番号・メールアドレスまでお問い合わせください。</a></p>
+				<p class="u-ta_c"><a href="#FOOTER_ADDRESS" class="c-link -cmn">駐車場の空き状況やお問い合わせに関しては、<br>ページ下の電話番号・メールアドレスまで<br class="_sp">お問い合わせください。</a></p>
 			</section><!-- /駐車場（月極め） -->
 
 			<!-- 貸事務所 -->
@@ -310,24 +299,25 @@ $current_id = "facility";
 				<h1 class="c-heading -lv1">貸事務所</h1>
 
 				<!-- slider -->
-				<div class="p-slider">
-					<div class="slider slider-for">
-						<div>
-							<img src="../assets/img/facility/slider_03_01.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_03_02.png" alt>
-						</div>
-					</div>
-					<div class="slider slider-nav">
-						<div>
-							<img src="../assets/img/facility/slider_03_01.png" alt>
-						</div>
-						<div>
-							<img src="../assets/img/facility/slider_03_02.png" alt>
-						</div>
-					</div>
-				</div><!-- /slider -->
+<!--				<div class="p-slider" data-slide-id="3">-->
+<!--					<div class="slider slider-for">-->
+<!--						<div>-->
+<!--							<img src="../assets/img/facility/slider_03_01.jpg" alt>-->
+<!--						</div>-->
+<!--						<div>-->
+<!--							<img src="../assets/img/facility/slider_03_02.jpg" alt>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="slider slider-nav">-->
+<!--						<div>-->
+<!--							<img src="../assets/img/facility/slider_03_01.jpg" alt>-->
+<!--						</div>-->
+<!--						<div>-->
+<!--							<img src="../assets/img/facility/slider_03_02.jpg" alt>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+				<!-- /slider -->
 
 				<p>※現在、空きはありません。</p>
 
@@ -363,7 +353,7 @@ $current_id = "facility";
 					</div><!-- /利用方法 -->
 				</dl>
 
-				<p class="u-ta_c"><a href="#FOOTER_ADDRESS" class="c-link -cmn">貸事務所の空き状況やお問い合わせに関しては、<br>ページ下の電話番号・メールアドレスまでお問い合わせください。</a></p>
+				<p class="u-ta_c"><a href="#FOOTER_ADDRESS" class="c-link -cmn">貸事務所の空き状況やお問い合わせに関しては、<br>ページ下の電話番号・メールアドレスまで<br class="_sp">お問い合わせください。</a></p>
 			</section><!-- /貸事務所 -->
 		</article>
 	</main>
